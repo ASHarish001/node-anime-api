@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Base path to your AnimeEpisodes folder
-const animeDir = "./";
+const animeDir = "./AnimeEpisodes";
 
 const server = http.createServer(async (req, res) => {
   if (req.url === '/api/users') {
