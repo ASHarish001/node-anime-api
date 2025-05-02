@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Base path to your AnimeEpisodes folder
